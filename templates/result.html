@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Prediction Completed</h2>
+    <video width="640" height="480" controls>
+        <source src="{{ url_for('uploaded_file', filename=output_filename) }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{% endblock %}

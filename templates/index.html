@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Welcome to the Shoplifting Prediction System</h2>
+    <p>This application allows you to upload a video for analysis to predict potential shoplifting activities.</p>
+    <p><a href="{{ url_for('upload') }}">Get Started</a></p>
+</div>
+{% endblock %}
